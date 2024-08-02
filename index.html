@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Juego de Adivina el Número: Intenta adivinar un número generado aleatoriamente entre un rango dado.">
+    <meta name="author" content="nsandr3s">
+    <title>Juego de Adivina el Número</title>
+    <!-- Enlaza el archivo de estilos CSS -->
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <div class="contenedor">
+        <!-- Título del juego -->
+        <h1>Juego de Adivina el Número</h1>
+        <!-- Instrucciones para el usuario -->
+        <p>Intenta adivinar el número entre <span id="rangoMinimo">1</span> y <span id="rangoMaximo">100</span></p>
+        <!-- Muestra una pista sobre el número -->
+        <p id="pista"></p>
+        <!-- Campo de entrada para que el usuario introduzca su número -->
+        <input type="number" id="entradaAdivinanza" placeholder="Introduce tu número" />
+        <!-- Botón para enviar la adivinanza -->
+        <button id="botonAdivinar">Adivinar</button>
+        <!-- Área para mostrar mensajes de retroalimentación -->
+        <p id="mensaje"></p>
+        <!-- Botón para reiniciar el juego, inicialmente oculto -->
+        <button id="botonReiniciar" style="display: none;">Reiniciar Juego</button>
+    </div>
+    <!-- Enlaza el archivo de script JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
